@@ -1,0 +1,21 @@
+INFO: ShadowsocksR 3.4.0 mod by esdeathlove
+INFO: current process RLIMIT_NOFILE resource: soft 512000 hard 512000
+INFO: loading config from user-config.json
+2018-04-16 23:40:13 INFO     util.py:49 loading libcrypto from libcrypto.so.10
+2018-04-16 23:40:13 INFO     asyncdns.py:324 dns server: [('8.8.8.8', 53), ('8.8.4.4', 53)]
+2018-04-16 23:40:13 INFO     asyncdns.py:324 dns server: [('8.8.8.8', 53), ('8.8.4.4', 53)]
+2018-04-16 23:41:16 ERROR    db_transfer.py:870 Traceback (most recent call last):
+  File "/root/shadowsocks/db_transfer.py", line 862, in thread_db
+    db_instance.push_db_all_user()
+  File "/root/shadowsocks/db_transfer.py", line 288, in push_db_all_user
+    self.update_all_user(dt_transfer)
+  File "/root/shadowsocks/db_transfer.py", line 79, in update_all_user
+    charset='utf8')
+  File "/usr/lib/python2.7/site-packages/cymysql/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/cymysql/connections.py", line 244, in __init__
+    self._connect()
+  File "/usr/lib/python2.7/site-packages/cymysql/connections.py", line 409, in _connect
+    raise OperationalError(2003, "Can't connect to MySQL server on %r (%s)" % (self.host, e.args[0]))
+OperationalError: (2003, "Can't connect to MySQL server on '207.246.86.218' (110)")
+
