@@ -7,7 +7,8 @@ cat << "EOF"
 | |/ |/ / _ `/ / / /__/ / _ \/  '_/
 |__/|__/\_,_/_/_/____/_/_//_/_/\_\ 
 
-Author: YihanH                         
+Author: YihanH                 
+Changed by:software-picker
 EOF
 echo "Proxy node installation script for Ubuntu 18.04 x64"
 [ $(id -u) != "0" ] && { echo "Error: You must be root to run this script"; exit 1; }
