@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 cat << "EOF"
@@ -70,7 +70,7 @@ fi
 echo "Checking the universe repository configuration..."
 apt install software-properties-common && apt-add-repository universe
 echo "Updating exsit package..."
-apt clean all && apt autoremove -y && apt update && apt upgrade -y && apt dist-upgrade -y
+apt clean all && apt autoremove -y && apt update -y && apt upgrade -y && apt dist-upgrade -y
 echo "Installing necessary package..."
 apt install git python python-setuptools python-pip build-essential ntpdate htop -y
 echo "Please select correct system timezone for your node."
